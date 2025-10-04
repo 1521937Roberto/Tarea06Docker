@@ -1,0 +1,23 @@
+version: "3.8"
+services:
+  mongo:
+    image: mongo:6
+    container_name: gestion_mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+  app:
+    build: .
+    container_name: gestion_app
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      - MONGODB_URI=mongodb://mongo:27017/contactsDB
+    depends_on:
+      - mongo
+
+volumes:
+  mongo_data:
