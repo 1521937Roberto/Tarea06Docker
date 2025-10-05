@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Usuarios</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <h1>Crear usuario</h1>
+    <div id="mensaje"></div>
+    <form id="form-usuario" autocomplete="off">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo" required>
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit">Crear</button>
+    </form>
+
+    <h2>Lista de usuarios</h2>
+    <ul id="lista-usuarios"></ul>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

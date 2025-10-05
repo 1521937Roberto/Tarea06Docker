@@ -1,0 +1,17 @@
+    body { background: #f8f9fa; }
+    .sidebar {
+      min-height: 100vh;
+      background: #fff;
+      border-right: 1px solid #dee2e6;
+    }
+    .sidebar .nav-link.active {
+      background: #e9ecef;
+      font-weight: bold;
+    }
+    .table-img {
+      height: 32px;
+      width: 32px;
+      object-fit: contain;
+    }
+
+    

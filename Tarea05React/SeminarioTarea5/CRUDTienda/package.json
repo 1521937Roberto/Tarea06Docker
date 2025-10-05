@@ -1,0 +1,26 @@
+{
+  "name": "crudtienda",
+  "version": "1.0.0",
+  "description": "Tienda virtual CRUD",
+  "main": "index.js",
+  "scripts": {
+    "bd": "node config/bd.js",
+    "start": "nodemon app.js",
+    "test": "git"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git"
+  },
+  "author": "Sebastihan",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0",
+    "multer": "^2.0.2",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
